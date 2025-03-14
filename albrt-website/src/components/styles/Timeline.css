@@ -1,0 +1,102 @@
+.timeline {
+  padding: 4rem 2rem;
+  position: relative; /* Add this for positioning context */
+}
+
+.timeline h2 {
+  position: sticky; /* Make title sticky */
+  top: 0;
+  background: white; /* Ensure text is readable when scrolling */
+  padding: 1rem 0;
+  margin: 0;
+  z-index: 3; /* Ensure title stays above timeline items */
+}
+
+.timeline-container {
+  display: flex;
+  min-width: min-content;
+  margin: 2rem auto;
+  position: relative;
+  padding: 20px 0;
+  overflow-x: auto; /* Move scroll to container instead of whole timeline */
+}
+
+/* Line connecting timeline items */
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #333;
+  z-index: 1;
+}
+
+.timeline-item {
+  flex: 0 0 300px;
+  margin: 0 20px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Remove the black dot by commenting out or removing this block */
+/* .timeline-item::before {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: #333;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 60px;
+} */
+
+.timeline-date {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.timeline-content {
+  text-align: center;
+}
+
+.timeline-content ul {
+  display: inline-block;
+  text-align: left;
+  margin-top: 1rem;
+  padding-left: 0;
+}
+
+.timeline-content li {
+  margin-bottom: 0.5rem;
+  list-style-position: inside;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .timeline-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .timeline-container::before {
+    width: 2px;
+    height: 100%;
+    left: 50%;
+    top: 0;
+  }
+
+  .timeline-item {
+    margin: 20px 0;
+  }
+}
