@@ -31,7 +31,7 @@ const Team = () => {
       name: 'Dania Akil',
       role: 'Library and Social Media Liason, Survey',
       image: './teamHeadshots/dania.png',
-      description: '4th Year Computer Science major specializing in AI',
+      description: '2nd Year Business Major',
     },
     {
       name: 'Meron Abera',
@@ -55,7 +55,7 @@ const Team = () => {
       name: 'Brandon Fox',
       role: 'Financial Liason',
       image: './teamHeadshots/brandon.png',
-      description: '4th Year Computer Science major specializing in AI',
+      description: '2nd Year Computer Science major',
     },
     {
       name: 'Kaz Henderson',
