@@ -1,28 +1,28 @@
 .header {
   height: calc(100vh - 80px); 
   margin-top: 10px;
+  padding: 0 6rem 0;  /* Reduced bottom padding */
   display: flex;
   align-items: center;
-  justify-content: space-between;  /* Changed from center to space-between */
+  justify-content: space-between; 
   color: #333;  /* Changed from white to dark text */
-  padding: 0 6rem;  /* Added horizontal padding */
 }
 
 .header-content {
-  flex: 1;  /* Takes up available space */
+  flex: 1;
   padding: 2rem;
-  text-align: left;  /* Changed from center to left */
-  max-width: 800px;  /* Limit text width */
+  text-align: left;
+  max-width: 800px;
 }
 
 .header h1 {
   font-size: 4rem;
   margin-bottom: 2rem;
-  line-height: 1.2;  /* Added for better readability */
+  line-height: 1.2;
 }
 
 .glasses-image {
-  flex: 1;  /* Takes up available space */
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,11 +32,11 @@
 .glasses-image img {
   max-width: 100%;
   height: auto;
-  max-height: 500px;  /* Limit image height */
+  max-height: 500px;
   object-fit: contain;
 }
 
-/* Responsive design */
+/* Responsive Design */
 @media (max-width: 1024px) {
   .header {
     padding: 0 2rem;

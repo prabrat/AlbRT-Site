@@ -10,6 +10,16 @@ const Navbar = () => {
         element.scrollIntoView({ behavior: 'smooth' });
     };
 
+    const handleDownload = () => {
+        const pdfUrl = process.env.PUBLIC_URL + './proposal.pdf'; // Path to your PDF
+        const link = document.createElement('a');
+        link.href = pdfUrl;
+        link.download = 'AlbRT Research Paper.pdf'; // Name of the file to be downloaded
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return ( 
         <header className='nav'> 
             <div className='nav-left'> 
@@ -46,6 +56,11 @@ const Navbar = () => {
                 >
                     Team
                 </Link>
+                <div className='button'>
+                    <button onClick={handleDownload} className="download-btn">
+                        AlbRT Research Paper →
+                    </button>
+                </div>
             </div>
         </header>
     )

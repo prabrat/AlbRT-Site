@@ -1,10 +1,11 @@
 .about {
-  padding: 0 12rem;  
+  padding: 0 12rem 3rem; 
   min-height: calc(100vh - 80px); 
+  margin-top: 0; 
 }
 
 .about-content {
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
   gap: 100px;
@@ -18,16 +19,25 @@
   margin-top: 100px;
 }
 
+.research-container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  gap: 50px;
+  margin-top: 100px;
+}
+
 .research-info { 
   max-width: 500px;
-  align-items: left;
-  margin-top: 100px;
+  flex: 1; 
+  padding: 2rem;
+  text-align: left;
 }
 
 .research-info h1 { 
   font-size: 3rem;
   margin-bottom: 2rem;
-  line-height: 1.2;  /* Added for better readability */
+  line-height: 1.2;
 }
 
 .research-info p { 
@@ -37,4 +47,55 @@
 
 .paper-txt { 
   color: #828282;
+}
+
+.paper-image {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.paper-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.download-btn {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.download-btn:hover {
+  background-color: #545455;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about {
+    padding: 0 5rem;
+  }
+
+  .research-container {
+    flex-direction: column; /* Stack elements on smaller screens */
+    align-items: center;
+    text-align: center;
+  }
+
+  .research-info {
+    text-align: center;
+  }
+
+  .paper-image {
+    padding: 1rem;
+  }
 }

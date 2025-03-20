@@ -48,7 +48,7 @@ const Timeline = () => {
 
   return (
     <section className="timeline">
-      <h2>Project Timeline</h2>
+      <h1>Project Timeline</h1>
       <div className="timeline-container">
         {milestones.map((milestone, index) => (
           <div key={index} className="timeline-item">

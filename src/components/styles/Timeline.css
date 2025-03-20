@@ -1,56 +1,68 @@
 .timeline {
-  padding: 6rem 2rem;
-  min-height: calc(100vh - 80px);
+  padding: 0.2rem 0rem;
+  min-height: calc(100vh - 80px);  /* Ensures the section height works well with the layout */
   position: relative;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-.timeline h2 {
-  position: sticky;
-  top: 80px;
-  background: white; 
-  padding: 1rem 0;
-  margin: 0;
-  z-index: 3; 
+.timeline h1 {
+  font-size: 2.5rem;
+  text-align: center; 
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  color: #000000;
 }
 
 .timeline-container {
-  max-width: 1400px;  
+  max-width: 1400px;
   margin: 3rem auto;
   display: flex;
   min-width: min-content;
   position: relative;
   padding: 20px 0;
-  overflow-x: auto; 
+  overflow-x: auto;
+  gap: 30px;
+  justify-content: center; /* Centers the timeline items */
 }
 
-/* Line connecting timeline items */
 .timeline-container::before {
   content: '';
   position: absolute;
   top: 50%;
   left: 0;
   right: 0;
-  height: 2px;
-  background: #333;
+  height: 4px; /* Thicker line */
+  background: #000000;
   z-index: 1;
+  border-radius: 5px;
+  width: calc(100% - 20px);  /* Extend the line width to cover the timeline */
+  left: 10px; /* Adjust the left margin to ensure the line starts from the leftmost item */
 }
 
 .timeline-item {
-  flex: 0 0 350px; 
-  margin: 0 30px;  
-  padding: 25px;
+  flex: 0 0 350px;
+  padding: 30px;
   background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
   position: relative;
   z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .timeline-date {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   text-align: center;
+  color: #000000;
 }
 
 .timeline-content {
@@ -67,7 +79,8 @@
 .timeline-content li {
   margin-bottom: 0.5rem;
   list-style-position: inside;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  color: #555;
 }
 
 /* Responsive adjustments */

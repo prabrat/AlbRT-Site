@@ -8,6 +8,7 @@ const Footer = () => {
         <div className="contact-info">
           <h3>Contact Us</h3>
           <p>Email: <a href="mailto:teamalbrt.gemstone@gmail.com">teamalbrt.gemstone@gmail.com</a></p>
+          <p>Gemstone Department: <a href="mailto:gems@umd.edu">gems@umd.edu</a></p>
           <p>Location: 
             <br />
             Gemstone Honors Program<br />

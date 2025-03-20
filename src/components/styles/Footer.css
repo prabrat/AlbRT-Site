@@ -24,6 +24,14 @@
   font-family: inherit; /* Matches website font */
 }
 
+.contact-info h3 { 
+  font-size: 2rem;
+  text-align: left; 
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: #000000;
+}
+
 .contact-info a:hover {
   color: #666; /* Optional: adds subtle hover effect */
 }
@@ -31,7 +39,7 @@
 .sponsor-logos {
   display: flex;
   gap: 1.4rem;
-  margin-top: 1rem;
+  margin-top: 3rem;
   align-items: center; /* Centers logos vertically */
   justify-content: flex-start;
   gap: 6rem; 
