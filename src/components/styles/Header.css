@@ -1,25 +1,63 @@
 .header {
-  height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('../assets/images/tmp.png');
-  background-size: cover;
-  background-position: center;
+  height: calc(100vh - 80px); 
+  margin-top: 10px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
+  justify-content: space-between;  /* Changed from center to space-between */
+  color: #333;  /* Changed from white to dark text */
+  padding: 0 6rem;  /* Added horizontal padding */
 }
 
 .header-content {
+  flex: 1;  /* Takes up available space */
   padding: 2rem;
+  text-align: left;  /* Changed from center to left */
+  max-width: 800px;  /* Limit text width */
 }
 
 .header h1 {
   font-size: 4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.2;  /* Added for better readability */
 }
 
-.header p {
-  font-size: 1.5rem;
-} 
+.glasses-image {
+  flex: 1;  /* Takes up available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.glasses-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 500px;  /* Limit image height */
+  object-fit: contain;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 2rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-content {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .glasses-image {
+    margin-top: 2rem;
+  }
+
+  .glasses-image img {
+    max-height: 300px;
+  }
+}

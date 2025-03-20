@@ -1,24 +1,26 @@
 .timeline {
-  padding: 4rem 2rem;
-  position: relative; /* Add this for positioning context */
+  padding: 6rem 2rem;
+  min-height: calc(100vh - 80px);
+  position: relative;
 }
 
 .timeline h2 {
-  position: sticky; /* Make title sticky */
-  top: 0;
-  background: white; /* Ensure text is readable when scrolling */
+  position: sticky;
+  top: 80px;
+  background: white; 
   padding: 1rem 0;
   margin: 0;
-  z-index: 3; /* Ensure title stays above timeline items */
+  z-index: 3; 
 }
 
 .timeline-container {
+  max-width: 1400px;  
+  margin: 3rem auto;
   display: flex;
   min-width: min-content;
-  margin: 2rem auto;
   position: relative;
   padding: 20px 0;
-  overflow-x: auto; /* Move scroll to container instead of whole timeline */
+  overflow-x: auto; 
 }
 
 /* Line connecting timeline items */
@@ -34,29 +36,15 @@
 }
 
 .timeline-item {
-  flex: 0 0 300px;
-  margin: 0 20px;
-  padding: 20px;
+  flex: 0 0 350px; 
+  margin: 0 30px;  
+  padding: 25px;
   background: white;
   border: 1px solid #ddd;
   border-radius: 8px;
   position: relative;
   z-index: 2;
 }
-
-/* Remove the black dot by commenting out or removing this block */
-/* .timeline-item::before {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  background: #333;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 60px;
-} */
 
 .timeline-date {
   font-weight: bold;

@@ -1,12 +1,40 @@
 .about {
-  padding: 4rem 2rem;
+  padding: 0 12rem;  
+  min-height: calc(100vh - 80px); 
 }
 
 .about-content {
-  max-width: 800px;
+  max-width: 1200px; 
   margin: 0 auto;
+  padding: 0 2rem;
+  gap: 100px;
 }
 
-.current-work {
-  margin-top: 2rem;
-} 
+.about-content p { 
+  font-size: 30px;
+}
+
+.about-video { 
+  margin-top: 100px;
+}
+
+.research-info { 
+  max-width: 500px;
+  align-items: left;
+  margin-top: 100px;
+}
+
+.research-info h1 { 
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  line-height: 1.2;  /* Added for better readability */
+}
+
+.research-info p { 
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.paper-txt { 
+  color: #828282;
+}
