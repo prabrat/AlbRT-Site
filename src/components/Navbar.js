@@ -58,7 +58,7 @@ const Navbar = () => {
                 </Link>
                 <div className='button'>
                     <button onClick={handleDownload} className="download-btn">
-                        AlbRT Research Paper →
+                        AlbRT Research Proposal →
                     </button>
                 </div>
             </div>
