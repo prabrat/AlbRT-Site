@@ -21,12 +21,7 @@ const Team = () => {
       image: './teamHeadshots/prabhat.png',
       description: '2nd Year Computer Science major',
     },
-    {
-      name: 'Raghav Chakravarthy',
-      role: 'Team and Web Liason, Software Team',
-      image: './teamHeadshots/raghav.png',
-      description: '2nd Year Computer Science major',
-    },
+    
     {
       name: 'Dania Akil',
       role: 'Library and Social Media Liason, Survey',
@@ -45,24 +40,14 @@ const Team = () => {
       image: './teamHeadshots/jaime.png',
       description: '2nd Year Computer Science major',
     },
-    {
-      name: 'Alan Jiang',
-      role: 'Mentor Liason, Software Team',
-      image: './teamHeadshots/alan.png',
-      description: '2nd Year Computer Science major',
-    },
+    
     {
       name: 'Brandon Fox',
       role: 'Financial Liason',
       image: './teamHeadshots/brandon.png',
       description: '2nd Year Computer Science major',
     },
-    {
-      name: 'Kaz Henderson',
-      role: 'Ombudsperson, Software Team',
-      image: './teamHeadshots/kaz.png',
-      description: '2nd Year Computer Science major',
-    },
+   
     {
       name: 'Juno Song',
       role: 'Web Liason',
