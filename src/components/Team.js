@@ -29,12 +29,6 @@ const Team = () => {
       description: '2nd Year Business Major',
     },
     {
-      name: 'Meron Abera',
-      role: 'Team Clerk, Hardware Team',
-      image: './teamHeadshots/meron.png',
-      description: '2nd Year Computer Science major',
-    },
-    {
       name: 'Jaime Coreas-Parada',
       role: 'Team Clerk, Software Team',
       image: './teamHeadshots/jaime.png',
